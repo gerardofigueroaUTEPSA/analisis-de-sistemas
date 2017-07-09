@@ -1,0 +1,94 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <nav class="nav-extended #009688 teal">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">SEREPARATODO</a>
+        </div>
+        <div class="nav-content">
+          <a class="waves-effect waves-teal btn" id="cerrar-sesion">Cerrar Sesion</a>
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#test1">Administrar Empleados</a></li>
+            <li class="tab"><a class="active" href="#test2">Crear Cuentas</a></li>
+            <li class="tab"><a href="#test3">Agregar Empleados</a></li>
+            <li class="tab"><a href="#test4">Agregar Clientes</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="test3" class="col s12">
+      <h2>Agregar Empleados</h2>
+      <div class="row">
+        <div class="col s12 m8 offset-m2">
+          <div class="card hoverable" id="formulario">
+            <div class="card-content">
+              <div class="container">
+                <form id="myForm1">
+                  <div class="row">
+                      <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="nombreCompleto" type="text" class="validate">
+                        <label for="icon_prefix">Nombre Completo</label>
+                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">vpn_key</i>
+                      <input id="cargo" type="text" class="validate">
+                      <label for="icon_telephone">Cargo</label>
+                    </div>
+                  </div>
+                  <div class="row center">
+                    <a class="waves-effect waves-light btn waves-teal"  onclick="guardarEmpleado();"><i class="material-icons right"">vpn_key</i>Guardar</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="display: none;">
+        <div class="col s12 m6 offset-m3">
+          <div class="collection">
+            <a id="plantilla" href="#!" class="collection-item">
+              <span id="nombreEmpleado" class="black-text"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="test2" class="col s12">
+
+      </div>
+
+      <div id="test1" class="col s12">
+        <h2>Empleados</h2>
+        <div class="row">
+          <div class="col s12 m4">
+            <ul class="listaEmpleados collection">
+              
+            </ul>
+          </div>  
+        </div>
+      </div>
+
+      <div id="test4" class="col s12">
+
+      </div>
+
+      <!--Import jQuery before materialize.js-->
+      <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
